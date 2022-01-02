@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'kanape',
@@ -60,4 +60,6 @@ export default {
       '~assets/styles/typography.sass',
     ]
   },
+
+  telemetry: false
 }

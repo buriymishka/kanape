@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production && npm install && nuxt build && node server/index.js",
+    "start": "npm install && nuxt build && node server/index.js",
     "generate": "nuxt generate"
   },
   "engines": {

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "npm install && nuxt build && node server/index.js",
+    "start": "rm -rf node_modules/ && npm install && nuxt build && node server/index.js",
     "generate": "nuxt generate"
   },
   "engines": {

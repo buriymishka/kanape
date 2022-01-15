@@ -5,14 +5,12 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "npm install && nuxt build && cross-env NODE_ENV=production node server/index.js",
+    "start": "nuxt start",
     "generate": "nuxt generate"
-  },
-  "engines": {
-    "node": "14.x"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
     "cross-env": "^7.0.3",

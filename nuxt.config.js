@@ -19,6 +19,7 @@ module.exports = {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/global.js' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -35,7 +36,27 @@ module.exports = {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: ['lv', 'ru', 'en'],
+    defaultLocale: 'lv',
+    vueI18n: {
+      fallbackLocale: 'lv',
+      messages: {
+        lv: {
+          welcome: 'Laba diena'
+        },
+        ru: {
+          welcome: 'Добро пожаловать'
+        },
+        en: {
+          welcome: 'welcome friend'
+        }
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

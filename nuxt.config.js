@@ -32,30 +32,31 @@ module.exports = {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/i18n',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/i18n',
   ],
 
   i18n: {
-    locales: ['lv', 'ru', 'en'],
-    defaultLocale: 'lv',
-    vueI18n: {
-      fallbackLocale: 'lv',
-      messages: {
-        lv: {
-          welcome: 'Laba diena'
-        },
-        ru: {
-          welcome: 'Добро пожаловать'
-        },
-        en: {
-          welcome: 'welcome friend'
-        }
+    locales: [
+      {
+        code: 'lv',
+        file: 'lv.js'
+      },
+      {
+        code: 'ru',
+        file: 'ru.js'
+      },
+      {
+        code: 'en',
+        file: 'en.js'
       }
-    }
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    defaultLocale: 'lv'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
